@@ -18,7 +18,7 @@ pipeline {
                // sh "mvn clean"
                 //sh "mvn package"
                // Build Docker image
-                sh "docker build -t angular-spring-boot:v1 ."
+               // sh "docker build -t angular-spring-boot:v1 ."
                  sh "docker build -t mypet-spring-boot:v1 ."
             }
         }
