@@ -13,13 +13,14 @@ pipeline {
                 sh "docker-compose --version"
             }
         }
-        stage("Build Docker Image"){
+          stage("Build the project"){
             steps{
+                dir('C:\Users\ashis\OneDrive\Desktop\Capstone Project\backend -capstone Project\backend') {
                // sh "mvn clean"
                 //sh "mvn package"
                // Build Docker image
-               // sh "docker build -t angular-spring-boot:v1 ."
-                 sh "docker build -t mypet-spring-boot:v1 ."
+                sh "docker build -t angular-spring-boot:v1 ."
+            }
             }
         }
         stage("run the docker containers"){
