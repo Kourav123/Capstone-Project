@@ -17,12 +17,6 @@ services:
       - mysql-container
     ports:
       - 9090:8080
-    restart: always
-     angular-container:
-    build: ./frontend/
-    container_name: angular-container
-    ports:
-      - 80:80
-    restart: always
+    
 
 
