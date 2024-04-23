@@ -15,8 +15,8 @@ pipeline {
         }
         stage("Build the project"){
             steps{
-                sh "mvn clean"
-                sh "mvn package"
+               // sh "mvn clean"
+                //sh "mvn package"
                // Build Docker image
                 sh "docker build -t angular-spring-boot:v1 ."
             }
