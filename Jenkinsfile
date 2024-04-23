@@ -15,7 +15,7 @@ pipeline {
         }
           stage("Build the project"){
             steps{
-                dir('C:\\Users\\ashis\\OneDrive\\Desktop\\Capstone Project\\backend -capstone Project\\backend'){
+                dir('./backend'){
                // sh "mvn clean"
                 //sh "mvn package"
                // Build Docker image
