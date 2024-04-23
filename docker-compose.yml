@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3'
 services:
   mysql-container:
     image: mysql:8
@@ -11,12 +11,10 @@ services:
     restart: always
 
   springboot-container:
-    # Commented out as it's not necessary here
-    # build: . ./backend/
-    image: Angular-spring-boot:v1
+    image: angular-spring-boot:v1
     container_name: springboot_container 
     depends_on:
-      - mysql-container  # Corrected service name
+      - mysql-container
     ports:
       - 9090:8080
     restart: always
@@ -26,4 +24,4 @@ services:
     container_name: angular_container
     ports:
       - 80:80
-    restart: always 
+    restart: always
