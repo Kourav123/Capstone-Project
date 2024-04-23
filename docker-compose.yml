@@ -19,9 +19,4 @@ services:
       - 9090:8080
     restart: always
 
-  angular-container:
-    build: ./frontend/
-    container_name: angular_container
-    ports:
-      - 80:80
-    restart: always
+
